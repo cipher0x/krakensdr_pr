@@ -5,7 +5,7 @@
 eval "$(conda shell.bash hook)"
 conda activate kraken
 
-./kraken_pr_stop.sh
+"$(dirname "$0")"/kraken_pr_stop.sh
 sleep 2
 
 cd heimdall_daq_fw/Firmware
